@@ -24,7 +24,7 @@ class ExtraFieldsPlugin extends GenericPlugin
         $success = parent::register($category, $path);
         if ($success && $this->getEnabled()) {
         // Use a hook to extend the context entity's schema
-        HookRegistry::register('Schema::get::publication ', array($this, 'addToSchema'));
+        HookRegistry::register('Schema::get::publication', array($this, 'addToSchema'));
 
         // Use a hook to add a field to the title-abstract publicaion settings.
         HookRegistry::register('Form::config::before', array($this, 'addToForm'));
@@ -84,7 +84,7 @@ class ExtraFieldsPlugin extends GenericPlugin
 	 * @param $form FormHandler
 	 */
 	public function addtoForm($hookName, $form) {
-		if (!defined('FORM_TITLE_ABSTRACT') || $form->id !== FORM_TITLE_ABSTRACT) {
+		if (!defined('FORM_METADATA') || $form->id !== FORM_METADATA) {
 			return;
 		}
 
