@@ -17,7 +17,8 @@ msgstr "Extra Fields"
 msgid "plugins.generic.extraFields.description"
 msgstr "Add extra fields to submission."
 
-msgid "plugins.generic.extraFields.publicationStatement"
-msgstr "Publication Statement"
+msgid "plugins.generic.extraFields.funding"
+msgstr "Финансирование"
 
-
+msgid "plugins.generic.extraFields.authorGuidelinesCustom"
+msgstr "Пользовательское поле (extraFields plugin)"
